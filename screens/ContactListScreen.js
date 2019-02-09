@@ -25,6 +25,9 @@ class ContactListScreen extends React.Component {
   }
 
   render() {
+      // console.log(this.props.contacts)
+      // console.log(this.state.showContacts)
+
     return (
       <View style={styles.container}>
         <Button title="toggle contacts" onPress={this.toggleContacts} />

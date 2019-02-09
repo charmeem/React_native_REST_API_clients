@@ -53,7 +53,8 @@ const MainTabs = createBottomTabNavigator(
 )
 
 const AppNavigator = createSwitchNavigator({
-  Login: LoginScreen,
+  // bypassing login
+  // Login: LoginScreen,
   Main: MainTabs,
 })
 
@@ -62,17 +63,18 @@ export default class App extends React.Component {
     contacts,
   }
 
-  /*
+/*
   componentDidMount() {
     this.getUsers()
   }
 
   getUsers = async () => {
     const results = await fetchUsers()
+      // console.log(results)
     this.setState({contacts: results})
   }
-  */
 
+*/
   addContact = newContact => {
     this.setState(prevState => ({
       contacts: [...prevState.contacts, newContact],

@@ -10,7 +10,10 @@ export const fetchUsers = async () => {
 }
 
 export const login = async (username, password) => {
-  const response = await fetch('http://localhost:8000', {
+  // console.log('hello')
+  //   const token = '123'
+  //   return token
+  const response = await fetch('http://localhost:12345', {
     method: 'POST',
     headers: {'content-type': 'application/json'},
     body: JSON.stringify({username, password}),
@@ -22,6 +25,7 @@ export const login = async (username, password) => {
   }
 
   const errMessage = await response.text()
+
   throw new Error(errMessage)
 }
 
