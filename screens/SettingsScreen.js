@@ -1,23 +1,29 @@
-import React from 'react';
-import {View} from 'react-native';
-import { ExpoConfigView } from '@expo/samples';
-import Ionicons from "react-native-ionicons";
+import React from 'react'
+import {Button, View, StyleSheet, Text} from 'react-native'
+
+import Ionicons from 'react-native-vector-icons/Ionicons'
 
 export default class SettingsScreen extends React.Component {
   static navigationOptions = {
-
-      Iconbar: () => (
-          <View>
-            <Icon name="add" />
-
-            <Icon ios="ios-add" android="md-add" />
-          </View>
-      )
-  };
-
+    tabBarIcon: ({focused, tintColor}) => (
+      <Ionicons name={`ios-options${focused ? '' : '-outline'}`} size={25} color={tintColor} />
+    ),
+  }
   render() {
-    /* Go ahead and delete ExpoConfigView and replace it with your
-     * content, we just wanted to give you a quick view of your config */
-    return <ExpoConfigView />;
+    return (
+      <View style={styles.container}>
+        <Text style={styles.text}>Settings coming soon.</Text>
+      </View>
+    )
   }
 }
+
+const styles = StyleSheet.create({
+  container: {
+    justifyContent: 'center',
+    flex: 1,
+  },
+  text: {
+    textAlign: 'center',
+  },
+})

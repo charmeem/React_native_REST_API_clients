@@ -1,55 +1,52 @@
-import React from 'react';
-import { Button,StyleSheet, View } from 'react-native';
-import {Constants} from 'expo';
-import ContactsList from '../ContactsList';
+import React from 'react'
+import {Button, View, StyleSheet} from 'react-native'
 import {connect} from 'react-redux'
 
- class ContactListScreen extends React.Component {
+import SectionListContacts from '../SectionListContacts'
 
-    static navigationOptions = ({navigation}) => ({
-        headerTitle:'Contacts List',
-        headerRight: <Button title="Add" color='#a41034' onPress={()=>{
-            navigation.navigate('AddContact')
-        }}/>
-    });
+class ContactListScreen extends React.Component {
+  static navigationOptions = ({navigation}) => ({
+    headerTitle: 'Contacts',
+    headerRight: (
+      <Button title="Add" onPress={() => navigation.navigate('AddContact')} color="#a41034" />
+    ),
+  })
 
-    state={
-        showContacts:true,
-    }
-    toggleContacts = () => {
-        this.setState(prevState => ({showContacts: !prevState.showContacts}))
-    }
+  state = {
+    showContacts: true,
+  }
 
-    handleSelectContact = contact => {
-        this.props.navigation.push('ContactDetails', contact)
-    }
-    render() {
+  toggleContacts = () => {
+    this.setState(prevState => ({showContacts: !prevState.showContacts}))
+  }
 
-        return (
-            <View style={styles.container}>
-                <Button title="toggle contacts" onPress={this.toggleContacts} />
-                {this.state.showContacts && (
-                    <ContactsList
-                        contacts={this.props.contacts}
-                        onSelectContact={this.handleSelectContact}
-                    />
-                )}
-            </View>
+  handleSelectContact = contact => {
+    this.props.navigation.push('ContactDetails', contact)
+  }
 
-        )
-    }
+  render() {
+    return (
+      <View style={styles.container}>
+        <Button title="toggle contacts" onPress={this.toggleContacts} />
+        {this.state.showContacts && (
+          <SectionListContacts
+            contacts={this.props.contacts}
+            onSelectContact={this.handleSelectContact}
+          />
+        )}
+      </View>
+    )
+  }
 }
 
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+  },
+})
+
 const mapStateToProps = state => ({
-    contacts:state.contacts,
+  contacts: state.contacts,
 })
 
 export default connect(mapStateToProps)(ContactListScreen)
-
-const styles = StyleSheet.create({
-    container: {
-        flex: 1,
-        backgroundColor: '#fff',
-        paddingTop: Constants.statusBarHeight,
-    },
-});
