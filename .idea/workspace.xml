@@ -1,22 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="76f3f923-daf4-44a9-9897-fca6183300cd" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.gitignore" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.watchmanconfig" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/AddContactForm.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FlatListContacts.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Row.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ScrollViewContacts.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/SectionListContacts.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/babel.config.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/contacts.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/id_rsa_github" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/id_rsa_github.pub" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/package-lock.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/package.json" afterPath="" />
-    </list>
+    <list default="true" id="76f3f923-daf4-44a9-9897-fca6183300cd" name="Default" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -109,16 +94,6 @@
               <item name="REST_API_clients" type="b2602c69:ProjectViewProjectNode" />
               <item name="REST_API_clients" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
-            <path>
-              <item name="REST_API_clients" type="b2602c69:ProjectViewProjectNode" />
-              <item name="REST_API_clients" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="pphsample" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="REST_API_clients" type="b2602c69:ProjectViewProjectNode" />
-              <item name="REST_API_clients" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="screenshots" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -201,12 +176,12 @@
       <workItem from="1547536246581" duration="596000" />
       <workItem from="1549690304036" duration="12544000" />
       <workItem from="1554225237239" duration="100000" />
-      <workItem from="1554272728860" duration="596000" />
+      <workItem from="1554272728860" duration="716000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="158639000" />
+    <option name="totallyTimeSpent" value="158759000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1040" height="744" extended-state="7" />
